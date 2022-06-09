@@ -1,0 +1,379 @@
+@font-face{
+   font-family: "DIN Next HC";
+   src: url("../fonts/DINNextLTPro-HeavyCondensed.ttf");
+ }
+
+* {
+  font-family: "DIN Next HC";
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,1);
+  background-color: #1a5127;
+}
+
+header{
+  background-color: #000;
+  height: 80px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo{
+    margin-left: 15px;
+}
+
+.logo-nombre{
+     margin-left: 5px;
+     display: flex;
+     align-items: center;
+ }
+
+ .logo-personaje{
+  text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #1a5127;
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.fondo-index{ 
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hulkindex.jpg);
+}
+
+.fondo-internas {
+  width: 100%;
+  height:950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1a5127; 
+
+}
+
+.increible {
+  margin-left: 20px;
+  font-size: 29px;
+  color: white;
+}
+
+.hulk {
+  font-size: 200px;
+  color: #1a5127;
+  margin-left: 15px;
+  -webkit-text-stroke: 3px #000;
+}
+
+.contenedor{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 8);
+}
+
+.text {
+  padding: 1.5rem;
+}
+
+.actor-title {
+  font-size: 16px;
+  color: #1a5127;
+}
+
+.actor-name {
+  font-size: 14px;
+  color: #1a5127;
+}
+
+.actor {
+  max-width: 100%;
+  height: auto;
+}
+
+
+form{
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.titulo-trivia, .titulo-galeria, .titulo-personajes {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  padding: 5px;
+}
+
+.cajas {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-color: black;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 18px;
+  margin-bottom: 16px;
+
+}
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  width: 30%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #000;
+  border-width: 3px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 5px;
+  color: #1a5127;
+}
+
+.btn:hover {
+  background: #1a5127;
+  color: #000;
+
+}
+
+.pregunta {
+  color: #000;
+  font-size: 24px;
+}
+
+.pregunta7_respuestas {
+  color: #000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+ footer{
+  margin-left: auto;
+  margin-right: auto;
+     width: 100%;
+     height: 50px;
+     background-color: #000;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .ucesmarvel{
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     margin-left: 15px;
+}
+
+.marvel{
+    margin-left: 10px;
+}
+
+.disneyplus{
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     margin-right: 15px;
+ }
+
+.nombre{
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 15px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #1a5127;
+  transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+@media (max-width: 768px){
+    header{
+    height: 60px;
+    max-width: auto;
+}
+
+    .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #1a5127;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+    .nav-menu-item {
+      font-size: 24px;
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+    .nav-toggle {
+    display: block;
+  }
+
+    .nav-menu_visible {
+    left: 0;
+  }
+
+  .fondo-index{
+    max-width: auto;
+    background-position: center;
+  }
+
+  .titulo-trivia, .titulo-galeria, .titulo-personajes {
+  font-size: 24px;
+  padding: 5px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+      header{
+        height: 60px;
+  max-width: auto;
+}
+
+    .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #1a5127;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+    .nav-menu-item {
+      font-size: 24px;
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+    .nav-toggle {
+    display: block;
+  }
+
+    .nav-menu_visible {
+    left: 0;
+  }
+
+  .fondo-index{
+    max-width: auto;
+    background-position: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    header{
+  max-width: auto;
+}
+
+  .fondo-index{
+    max-width: auto;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+  header{
+  max-width: auto;
+}
+
+  .fondo-index{
+    max-width: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
